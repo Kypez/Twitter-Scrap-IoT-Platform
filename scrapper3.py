@@ -10,14 +10,14 @@ import re
 import numpy as np
 
 #Readind data
-mindspherefinal=pd.read_csv('mindspherecleansed.csv', sep=',', encoding='utf-8')
+iotplatformfinal=pd.read_csv('mindspherecleansed.csv', sep=',', encoding='utf-8')
 #print(mindspherefinal)
 
 #Analysis of the tweet frequency over time
-analysis1=mindspherefinal['year'].value_counts()
+analysis1=iotplatformfinal['year'].value_counts()
 print(analysis1)
 
 #Analysis of the frequency of tweets of users
-analysis2=mindspherefinal['username'].value_counts()
+analysis2=iotplatformfinal['username'].value_counts()
 print(analysis2)
 
